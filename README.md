@@ -1,7 +1,5 @@
 ### Installation de MySQL
 
-MySQL est un système de gestion de base de données relationnelle populaire. Suivez ces étapes pour installer MySQL sur un système basé sur Linux, en utilisant Ubuntu comme exemple.
-
 #### Mise à jour du Système
 
 Assurez-vous que votre système est à jour en exécutant les commandes suivantes dans le terminal :
