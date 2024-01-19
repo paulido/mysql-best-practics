@@ -9,16 +9,12 @@ sudo apt update
 sudo apt upgrade
 ```
 
-#### Installation de MySQL Server ou MariaDB Server
+#### Installation de MySQL Server
 
 Installez le serveur MySQL en utilisant la commande suivante :
 
 ```bash
 sudo apt install mysql-server
-```
-ou
-```bash
-sudo apt install mariadb-server
 ```
 
 Pendant l'installation, vous serez invité à définir un mot de passe pour l'utilisateur root de MySQL. Choisissez un mot de passe fort et mémorisez-le.
