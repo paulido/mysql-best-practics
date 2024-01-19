@@ -1,4 +1,4 @@
-# Sécurité, Optimisation de MYSQL
+# Sécurité et optimisation de MYSQL
 
 ### 1. Configurer l'accès à distance:
 
