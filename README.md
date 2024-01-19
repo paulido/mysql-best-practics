@@ -100,6 +100,3 @@ Assurez-vous de redémarrer le service MySQL après avoir apporté des modificat
 sudo service mysql restart
 ```
 
-Adaptez ces instructions à votre environnement spécifique et sauvegardez toujours votre configuration avant d'apporter des modifications.
-
-
