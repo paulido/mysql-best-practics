@@ -1,3 +1,76 @@
+### Installation de MySQL
+
+MySQL est un système de gestion de base de données relationnelle populaire. Suivez ces étapes pour installer MySQL sur un système basé sur Linux, en utilisant Ubuntu comme exemple.
+
+#### Mise à jour du Système
+
+Assurez-vous que votre système est à jour en exécutant les commandes suivantes dans le terminal :
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+#### Installation de MySQL Server ou MariaDB Server
+
+Installez le serveur MySQL en utilisant la commande suivante :
+
+```bash
+sudo apt install mysql-server
+```
+ou
+```bash
+sudo apt install mariadb-server
+```
+
+Pendant l'installation, vous serez invité à définir un mot de passe pour l'utilisateur root de MySQL. Choisissez un mot de passe fort et mémorisez-le.
+
+#### Sécurisation de l'Installation
+
+MySQL inclut un script de sécurité pour renforcer les paramètres de sécurité. Exécutez-le avec la commande suivante :
+
+```bash
+sudo mysql_secure_installation
+```
+
+Suivez les instructions et répondez aux questions pour renforcer la sécurité de votre installation.
+
+#### Vérification du Statut de MySQL
+
+Assurez-vous que MySQL est en cours d'exécution avec la commande :
+
+```bash
+sudo systemctl status mysql
+```
+
+#### Connexion à MySQL
+
+Connectez-vous à votre serveur MySQL en tant qu'utilisateur root avec la commande :
+
+```bash
+sudo mysql -u root -p
+```
+
+Entrez le mot de passe que vous avez défini lors de l'installation.
+
+#### Création d'un Nouvel Utilisateur MySQL (Optionnel)
+
+Si vous souhaitez créer un utilisateur MySQL supplémentaire, vous pouvez le faire en suivant ces étapes dans le shell MySQL :
+
+```sql
+CREATE USER 'votre_utilisateur'@'localhost' IDENTIFIED BY 'votre_mot_de_passe';
+GRANT ALL PRIVILEGES ON *.* TO 'votre_utilisateur'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
+
+#### Installation du Client MySQL (Optionnel)
+
+Pour installer le client MySQL, qui vous permettra de vous connecter à des serveurs MySQL distants, utilisez la commande :
+
+```bash
+sudo apt install mysql-client
+```
+
 # Sécurité et optimisation de MYSQL
 
 ### 1. Configurer l'accès à distance:
