@@ -1,0 +1,1 @@
+# mysql-best-practics
