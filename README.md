@@ -51,14 +51,19 @@ query_cache_size = 64M
 Configurez des sauvegardes régulières. Vous pouvez utiliser des outils comme mysqldump ou des solutions plus avancées comme Percona XtraBackup.
 
 1. Faire un dump de la base de données
-mysqldump -hMY_HOST.COM -uDB_USERNAME -pDB_PASSWORD USERNAME_DATABASENAME > MysqlDump.sql
 
+```bash
+mysqldump -hMY_HOST.COM -uDB_USERNAME -pDB_PASSWORD USERNAME_DATABASENAME > MysqlDump.sql
+```
 
 2. Copier le dump vers un autre serveur
 
+```bash
 scp user@MY_HOST.COM:/some/path/file user2@MY_HOST2.COM:/some/path/file
+```
 
-Nb: executer ces commande avec cron
+
+_Nb: executer ces commande avec cron_
 
 
 
